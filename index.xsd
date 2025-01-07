@@ -1,17 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  
-  <!-- Define the structure for the students -->
-  <!-- root element of the XML document as <bookstore> -->
   <xs:element name="bookstore">
-    <!-- <xs:complexType>: This element defines a complex type
-    It means element can contain other elements also -->
     <xs:complexType>
-      <!-- <xs:sequence>  assigns the child elements to students -->
       <xs:sequence>
-       <!-- the below syntax <book> element, which can appear an unlimited
-        number of times inside <bookstore> -->
-        <xs:element name="book" maxOccurs="unbounded">
+      <xs:element name="book" maxOccurs="unbounded">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="title" type="xs:string"/>
