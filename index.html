@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This is the Document Type Declaration (DTD) that defines the structure 
+ and rules for the XML document. -->
+ <!-- <!DOCTYPE bookstore [...]>: Declares that the root element is <bookstore> -->
+ <!-- <!ELEMENT bookstore (book+)>: Specifies that the <bookstore> element must
+  contain one or more<book> elements -->
+  <!-- <!ELEMENT book (title, author, price)>: Specifies that each <book> element -->
+  <!-- <!ELEMENT title (#PCDATA)>  parsed character data (PCDATA)  hold text content -->
+  
+<!DOCTYPE bookstore [
+<!ELEMENT bookstore (book+)>
+<!ELEMENT book (title, author, price)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+]>
+
+<bookstore>
+  <book>
+    <title>HTML and CSS</title>
+    <author>Jon Duckett</author>
+    <price>550</price>
+  </book>
+  <book>
+    <title>"Introducing HTML5</title>
+    <author>Bruce Lawson</author>
+    <price>920</price>
+  </book>
+</book>
